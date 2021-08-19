@@ -11,16 +11,23 @@ Fast. (included Erubis and pyTenjin's technology. ex. cache)
 
 # Syntax
 ```<% (python code) %>```
+
 do python code
 
+
 ```<%= (python code) %>```
+
 do python code and print return value
 
+
 ```<%# (python code) %>```
+
 code comment. It's exists in python code but not print.
 
 ```<%=r (python code) %>```
+
 raw mode.
 
 ```<% %>```
+
 1% of incompatible. This is like endfor, endif, and end at other template systems, and outdent one level to python code. I brought this idea form Python Server Pages.
