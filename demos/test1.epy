@@ -1,0 +1,20 @@
+<%import os%>
+This a test for -d option <%=name%> test
+This a test for -D option <%=os.environ['gender']%>
+This a test for -d option <%=LOCATION%>
+
+<% age = int(age)
+if age < 18:
+  age += 5
+  if os.environ['gender'] == 'Male':
+    age *= 2 %>
+Multi-indent test: he is a man in <%=LOCATION%>
+<% %>
+Test variable update age=<%=age%>
+<% else: %>
+Test brach age=<%=age%>
+<% %>
+
+<%for i in range(int(my_len)):%>
+Ding~<%=i%>
+<% %>
