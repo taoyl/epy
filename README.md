@@ -14,7 +14,7 @@ epy includes all featurs of epython module, visit link above for more details.
 Here is the feature list from the view of a command-line tool.
 
 Command-line arguments:
-  -h, --help            show this help message and exit
+```  -h, --help            show this help message and exit
   -i INPUT, --input INPUT
                         Input file
   -o OUTPUT, --output OUTPUT
@@ -32,6 +32,7 @@ Command-line arguments:
   --delimiter DELIMITER
                         Specify the code delimiter, default is %
   --indent INDENT       Python code indent spaces, default is 2
+```
 
 # Syntax
 ```<% (python code) %>```
@@ -39,7 +40,8 @@ Command-line arguments:
 do python code, support multi-line code
 
 For multi-line code, users should follow the python syntax including indent.
-For plain text, epy doesn't care the indent. However, users should use a sparate line '<% %>' as an enclosing indicator to python code.
+
+For plain text, epy doesn't care the indent. However, users should use a sparate line ```<% %>``` as an enclosing indicator to python code.
 
 
 ```<%= (python code) %>```
