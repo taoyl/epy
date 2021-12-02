@@ -1,4 +1,4 @@
-# epy
+# Introduction
 epy is a command-line tool enabling flexiable embedded python code for template systems. It is similar to Perl's ePerl and Ruby's eRuby.
 
 
@@ -34,6 +34,30 @@ Command-line arguments:
   --indent INDENT       Python code indent spaces, default is 2
 ```
 
+# Install
+## Install with pip
+You can use the following to install epy package.
+
+```
+pip3 install git+https://github.com/taoyl/epy.git
+```
+
+To upgrade epy, use the following command:
+
+```
+pip3 install --upgrade git+https://github.com/taoyl/epy.git
+```
+
+## Manual installation
+If you don't have pip installed, I suggest you to install it first :)
+If you would really like to install epy manually, please try the following:
+
+```
+git clone https://github.com/taoyl/epy.git
+cd epy
+python3 setup.py install
+``` 
+
 # Syntax
 ```<% (python code) %>```
 
@@ -60,6 +84,8 @@ raw mode.
 ```<% %>```
 
 This is like endfor, endif, and end at other template systems, and outdent one level to python code. I brought this idea form Python Server Pages.
+
+
 
 
 # Usage
